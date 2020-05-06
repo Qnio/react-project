@@ -1,0 +1,50 @@
+@import '../../sass/main';
+
+.custom-button {
+  min-width: 72px;
+  min-height: 32px;
+  height: auto;
+  border-radius: 16px;
+  padding: 0 35px 0 35px;
+  font-size: 1rem;
+  color: white;
+  background-color: $main-color;
+  border-color: 1473e6;
+  cursor: pointer;
+  margin: 1rem 0;
+
+  &:hover {
+    background-color: $main-light-color;
+    color: $main-color;
+    transition: all 0.5s;
+  }
+
+  &.google-sign-in {
+    min-height: 3rem;
+    color: $main-color;
+    border-radius: 26px;
+    background-color: white;
+    &:hover {
+      border-color: $main-color;
+    }
+  }
+
+  &.fb-sign-in {
+    min-height: 3rem;
+    border-radius: 26px;
+    background-color: $main-color;
+    &:hover {
+      background-color: $main-light-color;
+    }
+  }
+  &.apple-sign-in {
+    min-height: 3rem;
+    border-radius: 26px;
+    color: white;
+    background-color: $second-color;
+    &:hover {
+      border-color: white;
+      background-color: $color-charcoal;
+    }
+  }
+}

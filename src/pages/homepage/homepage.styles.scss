@@ -1,0 +1,27 @@
+@import '../../sass/main';
+
+.homepage {
+  height: 100vh;
+  background-size: cover;
+  background-image: url(https://cdn.pixabay.com/photo/2020/04/30/16/43/caterpillar-5113614_960_720.jpg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+
+  &__container {
+    padding: 10rem 10rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+
+    &-item {
+      background-color: white;
+      border-radius: 5px;
+      box-shadow: 10px 10px 5px 0px rgba(165, 179, 175, 0.2);
+      flex-basis: 563px;
+      min-height: 45rem;
+      margin: 1rem;
+    }
+  }
+}

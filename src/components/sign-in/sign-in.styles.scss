@@ -1,0 +1,89 @@
+$main-color: rgba(65, 96, 56, 0.884);
+$second-color: rgb(242, 164, 60);
+$main-light-color: rgba(197, 213, 114, 0.4);
+
+.sign-in {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem 2.5rem;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 1.2rem;
+  color: $main-color;
+  .subtitle {
+    padding: 1rem 0;
+    font-size: 1rem;
+  }
+
+  .outer-label {
+    display: block;
+    margin-top: 1rem;
+    font-size: 0.8rem;
+  }
+
+  .option {
+    padding: 10px 5px;
+    color: $second-color;
+    cursor: pointer;
+  }
+
+  .sign-in-button {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+  }
+
+  .out-auth-sign-in {
+    display: flex;
+    flex-direction: column;
+  }
+  .terms {
+    font-size: 0.7rem;
+    padding: 1rem;
+    color: rgb(70, 70, 70);
+  }
+}
+
+.rule-text:before {
+  background: #eaeaea;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+}
+
+.rule-text:after {
+  background-color: #fff;
+  color: #4b4b4b;
+  content: attr(data-content);
+  display: inline-block;
+  font-size: 17px;
+  font-weight: 300;
+  line-height: 21px;
+  padding: 0 0.5em;
+  position: relative;
+}
+
+.rule-text {
+  border: 0;
+  height: auto;
+  outline: 0;
+  position: relative;
+  text-align: center;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+  overflow: visible;
+  display: block;
+  unicode-bidi: isolate;
+  margin-block-start: 0.5em;
+  margin-block-end: 0.5em;
+  margin-inline-start: auto;
+  margin-inline-end: auto;
+  //overflow: hidden;
+  border-style: inset;
+  border-width: 1px;
+}
